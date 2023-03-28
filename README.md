@@ -1,2 +1,3 @@
-# pithagon.github.io
+# Pithagon
+
 pithagon.github.io
