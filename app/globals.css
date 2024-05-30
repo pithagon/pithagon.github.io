@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --nextra-primary-hue: 212deg;
+  --nextra-primary-saturation: 100%;
+  --nextra-navbar-height: 4rem;
+  --nextra-menu-height: 3.75rem;
+  --nextra-banner-height: 2.5rem;
+  --nextra-bg: 255, 255, 255;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+html {
+  font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1, "ss06" 1 !important;
+  font-family: Segoe UI, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Roboto, Noto Sans, Ubuntu,
+    Cantarell, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+html {
+  scroll-padding-top: 4rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 1rem;
+}
+
+html {
+  tab-size: 4;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  line-height: 1.5;
+}
