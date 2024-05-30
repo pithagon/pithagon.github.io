@@ -21,7 +21,7 @@ export default function Header() {
                     <path d="M14.4241 15.7506C16.0251 14.9051 17.7531 15.2311 19.5033 15.1632L39.9533 15.1631V10.5779H39.3864C35.7737 10.5779 32.1607 10.5434 28.5486 10.5873C24.6886 10.6343 20.8227 10.3735 16.9688 10.7749C15.7134 10.9056 14.5772 11.326 13.6706 12.2404C12.0689 13.856 11.0991 15.8365 10.3984 17.9679C10.2424 18.4422 10.1076 18.9234 9.96094 19.4085C10.6998 19.5514 11.2793 19.5347 11.5477 18.7659C11.6138 18.5765 11.7583 18.411 11.8813 18.2453C12.5975 17.2803 13.3297 16.3285 14.4241 15.7506Z" fill="#3C99D4">
                     </path>
                 </svg>
-                <span className="max-md:hidden select-none font-extrabold ltr:ml-2 rtl:mr-2" title="MillionScope.github.io: Gesture Generation Research Community">MillionScope.github.io</span>
+                <span className="max-md:hidden select-none font-extrabold ltr:ml-2 rtl:mr-2" title="Pithagon.github.io: Gesture Generation Research Community">Pithagon.github.io</span>
             </a>
             {/* <a className="text-sm contrast-more:text-gray-700 contrast-more:dark:text-gray-100 max-md:hidden whitespace-nowrap font-medium subpixel-antialiased" aria-current="true" href="/docs/getting-started">Docs</a> */}
             {/* <div className="relative" data-headlessui-state="">
@@ -41,12 +41,12 @@ export default function Header() {
                             <span className="text-xs">⌘</span>K</kbd>
                     </div>
                 </div> */}
-            <a href="https://MillionScope.github.io/" target="blank" rel="blank" className=" contrast-more:text-gray-700 contrast-more:dark:text-gray-100 max-md:hidden whitespace-nowrap text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" aria-current="false">MillionScope ↗</a>
-            <a href="https://github.com/MillionScope" target="blank" rel="noreferrer">
+            <a href="https://Pithagon.github.io/" target="blank" rel="blank" className=" contrast-more:text-gray-700 contrast-more:dark:text-gray-100 max-md:hidden whitespace-nowrap text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" aria-current="false">Pithagon ↗</a>
+            <a href="https://github.com/Pithagon" target="blank" rel="noreferrer">
                 <Github />
                 <span className="sr-only">GitHub</span>
             </a>
-            <a href="https://twitter.com/MillionScopeai" target="blank" rel="noreferrer">
+            <a href="https://twitter.com/Pithagonai" target="blank" rel="noreferrer">
                 <Twitter />
             </a>
         </Navbar>

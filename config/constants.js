@@ -24,7 +24,7 @@ export const DEFAULTTHEME = {
     // },
     darkMode: true,
     direction: 'ltr',
-    // docsRepositoryBase: 'https://github.com/MillionScope.github.io/MillionScope.github.io',
+    // docsRepositoryBase: 'https://github.com/Pithagon.github.io/Pithagon.github.io',
     // editLink: {
     //     component: function EditLink({ className, filePath, children }) {
     //         const editUrl = useGitEditUrl(filePath)
