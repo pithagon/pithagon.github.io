@@ -10,6 +10,7 @@ export default function IndexPage() {
         margin: '25vh 0',
         fontWeight: 'bold'
       }}
+      className="bg-red-500 text-red-500"
     >
       Index page
     </h1>

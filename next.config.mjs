@@ -16,7 +16,7 @@ export default withNextra({
   },
   distDir: "build",
   // i18n: {
-  //   locales: ['en', 'zh', 'de'],
+  //   locales: ['en', 'es'],
   //   defaultLocale: 'en'
   // }
 })

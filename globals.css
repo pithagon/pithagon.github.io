@@ -1,2 +1,9 @@
 @tailwind components; /* Include component styles */
 @tailwind utilities; /* Include utility classes */
+
+.custom-class {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* 2 represents 0.5rem in Tailwind's spacing scale */
+  font-weight: 600; /* Font weight for 'semibold' */
+}
