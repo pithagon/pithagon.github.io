@@ -1,10 +1,20 @@
 {
   "compilerOptions": {
-    "checkJs": false,
+    "jsx": "react-jsx", // Use "react" for older versions of React
+    "checkJs": true, // Enable type-checking in JavaScript files (optional but recommended for better support)
+    "baseUrl": "./", // Base directory for resolving non-relative module names
     "paths": {
-      "@/*": [
-        "*"
+      "@/components/*": [
+        "components/*"
       ]
     }
-  }
+  },
+  "include": [
+    "app/**/*",
+    "content/**/*",
+    "components/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
