@@ -1,7 +1,7 @@
 import { ArrowRightIcon } from '@/components/icons'
 import cn from 'clsx'
 import Link from 'next/link'
-import { MotionDiv } from '../motion/framer-motion'
+import { MotionDiv } from '@/components/motion'
 import styles from './style.module.css'
 
 export const Feature = ({
