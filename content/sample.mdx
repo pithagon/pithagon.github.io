@@ -1,0 +1,25 @@
+import {Callout} from 'nextra/components'
+
+{/* Via props */}
+
+{/* Via async components */}
+export async function Stars() {
+const response = await fetch('https://api.github.com/repos/pithagon/pithagon.github.io')
+const repo = await response.json()
+const stars = repo.stargazers_count
+return <b>{stars}</b>
+}
+
+{/* Via async functions */}
+export async function getUpdatedAt() {
+const response = await fetch('https://api.github.com/repos/pithagon/pithagon.github.io')
+const repo = await response.json()
+const updatedAt = repo.updated_at
+return new Date(updatedAt).toLocaleDateString()
+}
+
+<Callout emoji="🏆">
+  Nextra has <Stars /> stars on GitHub! 
+  
+  Last repository update _{await getUpdatedAt()}_.
+</Callout>

@@ -1,10 +1,9 @@
-import 'nextra-theme-docs/style.css'
 import { Footer, Layout, Navbar, LocaleSwitch } from 'nextra-theme-docs'
 import { Banner, Head } from 'nextra/components'
 import { getPageMap } from "nextra/page-map"
-import "../styles.css"
-import "../globals.css"
-import "katex/dist/katex.min.css"
+// import "./styles.css"
+import "./globals.css"
+// import "katex/dist/katex.min.css"
 import Twitter from '@/components/icons/twitter'
 
 export const { viewport } = Head
@@ -55,20 +54,24 @@ export default async function RootLayout({ children }) {
   // config.frontMatter.image ||
   const image = 'https://assets.vercel.com/image/upload/v1572282926/swr/twitter-card.jpg'
 
-  const footer = (<Footer>
-    <LocaleSwitch />
-    <div className="flex items-center justify-center space-x-4">
+  const footer = (
+    <Footer className="flex-col items-center md:items-start">
       <a
-        rel="noreferrer"
+        className="x:focus-visible:nextra-focus flex items-center gap-1"
         target="_blank"
-        className="flex items-center gap-2 font-semibold custom-class"
-        href={"https://pithagon.com/about"}
+        rel="noreferrer"
+        title="pithagon.com homepage"
+        href="https://pithagon.com/about"
       >
         Powered by
         <FooterLogo />
       </a>
-    </div>
-  </Footer>)
+      <p className="mt-6 text-xs">
+        © {new Date().getFullYear()} The Pithagon Project.
+      </p>
+    </Footer>
+  )
+
 
   const navbar = (
     <Navbar
@@ -129,7 +132,7 @@ export default async function RootLayout({ children }) {
           navbar={navbar}
           footer={footer}
           editLink="Edit this page on GitHub"
-          docsRepositoryBase="https://github.com/pithagon/pithagon.github.io"
+          docsRepositoryBase="https://github.com/pithagon/pithagon.github.io/tree/main"
           sidebar={{ defaultMenuCollapseLevel: 1, autoCollapse: true, toggleButton: true }}
           toc={{
             float: true
@@ -139,7 +142,6 @@ export default async function RootLayout({ children }) {
           //   { locale: "es", "name": "Español" }
           // ]}
           darkMode={true}
-          // nextThemes={['nextra-theme-docs']}
           pageMap={await getPageMap()}
         >
           {children}

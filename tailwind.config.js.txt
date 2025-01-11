@@ -8,7 +8,6 @@ export default {
         './content/**/*.{md,mdx}',
         './components/**/*.{js,jsx,ts,tsx,md,mdx}',
         "./mdx-components.jsx",
-        "./app/layout.jsx"
     ],
     theme: {
         screens: {

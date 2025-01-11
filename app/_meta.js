@@ -2,6 +2,10 @@ export default {
   index: {
     type: 'page',
     title: 'Home',
+    display: 'hidden',
+    theme: {
+      timestamp: false
+    }
   },
   docs: {
     type: 'page',
