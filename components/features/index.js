@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { MotionDiv } from '@/components/motion'
 import styles from './features.module.css'
 
-export const Feature = ({
+export function Feature({
     large,
     centered,
     children,
@@ -13,7 +13,7 @@ export const Feature = ({
     href,
     index,
     ...props
-}) => {
+}) {
     return (
         <MotionDiv
             initial={{ opacity: 0 }}
@@ -44,6 +44,6 @@ export const Feature = ({
     )
 }
 
-export const Features = ({ children }) => {
+export function Features({ children }) {
     return <div className={styles.features}>{children}</div>
 }

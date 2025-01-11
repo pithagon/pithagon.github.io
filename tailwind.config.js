@@ -5,7 +5,7 @@ const colors = require('tailwindcss/colors')
 export default {
     content: [
         './app/**/*.{js,jsx,ts,tsx,md,mdx}',
-        './content/**/*.{md,mdx}',
+        './content/**/*.{js,jsx,md,mdx}',
         './components/**/*.{js,jsx,ts,tsx,md,mdx}',
         "./mdx-components.jsx",
     ],
