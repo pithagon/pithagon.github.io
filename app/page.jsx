@@ -2,8 +2,6 @@ import { ArrowRightIcon } from '@/components/icons'
 import { Link } from 'nextra-theme-docs'
 import { MdxIcon } from 'nextra/icons'
 import { MotionDiv, MotionH3 } from '@/components/motion'
-
-import './page.css'
 import {Features, Feature} from './_components/features/features'
 
 export const metadata = {
