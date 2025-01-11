@@ -1,7 +1,7 @@
 "use client"
 
-import { MoonIcon, SunIcon } from '@/nextra/icons'
-import { Select } from '@/nextra/select'
+import { MoonIcon, SunIcon } from 'nextra/components'
+import { Select } from 'nextra/components'
 import { useMounted } from '@/utils/hook/use-mount'
 import cn from "clsx"
 import { useTheme } from 'next-themes'

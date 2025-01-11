@@ -14,5 +14,9 @@ export default withNextra({
   images: {
     unoptimized: true // mandatory, otherwise won't export
   },
-  distDir: "build"
+  distDir: "build",
+  // i18n: {
+  //   locales: ['en', 'zh', 'de'],
+  //   defaultLocale: 'en'
+  // }
 })

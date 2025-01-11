@@ -1,0 +1,19 @@
+.svgfill {
+  fill: currentColor;
+}
+
+.introheading {
+  font-size: 3rem /* 48px */;
+  line-height: 1;
+  font-weight: 800;
+  text-align: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
