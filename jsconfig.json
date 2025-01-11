@@ -1,20 +1,47 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx", // Use "react" for older versions of React
-    "checkJs": true, // Enable type-checking in JavaScript files (optional but recommended for better support)
-    "baseUrl": "./", // Base directory for resolving non-relative module names
+    "baseUrl": ".",
+    "target": "es2022",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "moduleResolution": "bundler",
+    "jsx": "preserve",
+    "module": "esnext",
+    "resolveJsonModule": true,
     "paths": {
       "@/components/*": [
         "components/*"
       ]
-    }
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true
   },
   "include": [
-    "app/**/*",
-    "content/**/*",
-    "components/**/*"
+    // "app/**/*",
+    // "content/**/*",
+    // "components/**/*"
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.mjs"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    ".next"
   ]
 }
