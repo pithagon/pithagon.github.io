@@ -3,7 +3,6 @@ import { Link } from 'nextra-theme-docs'
 import { MdxIcon } from 'nextra/icons'
 import { MotionDiv, MotionH3 } from '@/components/motion'
 
-import styles from './page.module.css'
 import './page.css'
 import {Features, Feature} from '@/components/features'
 
@@ -30,9 +29,9 @@ export default function IndexPage() {
             .
           </p>
           <p className="subtitle">
-            <Link className={styles.cta} href="/docs">
+            {/* <Link className={styles.cta} href="/docs">
               Get started <span>→</span>
-            </Link>
+            </Link> */}
           </p>
         </div>
         <div className="features-container x:border-b nextra-border">
@@ -73,7 +72,8 @@ export default function IndexPage() {
                   when possible. No slow navigation or layout shift.
                 </p>
                 <div>
-                  <div className={styles.optimization}>
+                  {/* <div className={styles.optimization}> */}
+                  <div>
                     <div style={{ fontSize: '.9rem' }} className="leading-8">
                       <code>[Learn more](/more)</code>
                       <br />
@@ -84,7 +84,8 @@ export default function IndexPage() {
                     width="1.2em"
                     className="mx-auto my-6 rotate-90 text-neutral-400"
                   />
-                  <div className={styles.optimization}>
+                  {/* <div className={styles.optimization}> */}
+                  <div>
                     <div style={{ fontSize: '.9rem' }} className="leading-8">
                       <code>{'<Link .../>'}</code>
                       <br />
