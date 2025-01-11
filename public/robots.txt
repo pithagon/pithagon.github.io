@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://pithagon.com
+
+# Sitemaps
+Sitemap: https://pithagon.com/sitemap.xml
