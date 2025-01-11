@@ -2,7 +2,7 @@ import { ArrowRightIcon } from '@/components/icons'
 import cn from 'clsx'
 import Link from 'next/link'
 import { MotionDiv } from '@/components/motion'
-import styles from './style.module.css'
+import styles from './features.module.css'
 
 export const Feature = ({
     large,
