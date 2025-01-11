@@ -1,6 +1,7 @@
 export default {
   index: {
-    display: 'hidden'
+    type: 'page',
+    title: 'Home',
   },
   docs: {
     type: 'page',

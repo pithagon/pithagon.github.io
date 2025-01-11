@@ -1,9 +1,10 @@
 import 'nextra-theme-docs/style.css'
-import { Footer, Layout, Navbar, useConfig } from 'nextra-theme-docs'
+import { Footer, Layout, Navbar, LocaleSwitch } from 'nextra-theme-docs'
 import { Banner, Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import "../styles.css"
 import "katex/dist/katex.min.css"
+import Twitter from '@/components/icons/twitter'
 
 export const { viewport } = Head
 
@@ -50,8 +51,10 @@ export default async function RootLayout({ children }) {
 
   const navbar = (
     <Navbar
+      // projectIcon={<SWRLogo className="h-10" />}
+      projectLink={"https://github.com/pithagon/pithagon.github.io"}
       logo={
-        <div>
+        <>
           <SWRLogo className="h-10" />
           <span
             className="max-md:hidden select-none font-extrabold ltr:ml-2 rtl:mr-2"
@@ -59,12 +62,10 @@ export default async function RootLayout({ children }) {
           >
             Pithagon
           </span>
-
-          <b>Pithagon</b>{' '}
-          <span style={{ opacity: '60%' }}>The Next Docs Builder</span>
-        </div>
+        </>
       }
       // Next.js discord server
+      chatIcon={<Twitter />}
       chatLink="https://discord.gg/hEM84NMkRv"
     />
   )
@@ -108,7 +109,10 @@ export default async function RootLayout({ children }) {
           footer={<Footer />}
           editLink="Edit this page on GitHub"
           docsRepositoryBase="https://github.com/pithagon/pithagon.github.io"
-          sidebar={{ defaultMenuCollapseLevel: 1 }}
+          sidebar={{ defaultMenuCollapseLevel: 1, autoCollapse: true, toggleButton: true }}
+          toc={{
+            float: true
+          }}
           darkMode={true}
           // nextThemes={['nextra-theme-docs']}
           pageMap={await getPageMap()}
