@@ -9,14 +9,14 @@ import { Pithagon, Twitter } from '@/components/icons'
 export const { viewport } = Head
 // https://pithagon.com
 export const metadata = {
-  metadataBase: new URL('http://localhost:3000'),
+  metadataBase: new URL('http://pithagon.com'),
   applicationName: 'Pithagon',
   generator: 'Pithagon',
   appleWebApp: {
     title: 'Pithagon'
   },
   other: {
-    'msapplication-TileImage': '/ms-icon-144x144.png',
+    'msapplication-TileImage': '/favicon/mstile-150x150.png',
     'msapplication-TileColor': '#fff'
   },
   title: {
