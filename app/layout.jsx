@@ -64,7 +64,7 @@ export default async function RootLayout({ children }) {
         Powered by
         <Pithagon />
       </a>
-      <p className="x:mt-6 x:text-xs">
+      <p className="x:mt-2 x:text-xs">
         © {new Date().getFullYear()} MillionScope Inc.
       </p>
     </Footer>
