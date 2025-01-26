@@ -2,7 +2,7 @@
   "name": "pithagon",
   "license": "MIT",
   "scripts": {
-    "build": "next build && pnpm postbuild",
+    "build": "next build && npm run postbuild",
     "dev": "next --turbopack",
     "postbuild": "pagefind --site .next/server/app --output-path public/_pagefind",
     "start": "next start"
