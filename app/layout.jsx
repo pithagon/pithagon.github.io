@@ -79,7 +79,7 @@ export default async function RootLayout({ children }) {
         <>
           <Pithagon className="x:h-10" />
           <span
-            className="x:max-md:hidden x:select-none x:font-extrabold x:ltr:ml-2 x:rtl:mr-2"
+            className="x:max-md:hidden x:select-none x:font-semibold x:ltr:ml-2 x:rtl:mr-2"
             title={`Pithagon: ${TITLE["en"] || ''}`}
           >
             Pithagon
