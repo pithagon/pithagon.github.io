@@ -3,7 +3,7 @@
   "license": "MIT",
   "scripts": {
     "build": "next build && npm run postbuild",
-    "dev": "next --turbopack",
+    "dev": "next",
     "postbuild": "pagefind --site .next/server/app --output-path build/_pagefind",
     "start": "next start"
   },
