@@ -105,3 +105,5 @@ dist
 .DS_Store
 build/
 public/_pagefind/
+
+bun.lockb
